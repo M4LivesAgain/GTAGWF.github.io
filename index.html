@@ -11,10 +11,10 @@
       background: url('https://preview.redd.it/rnhbhegj2jhb1.png?width=1920&format=png&auto=webp&s=22f24209e95b9fed135c5335abb3f7d4a035342f') center/cover no-repeat;
       font-family: 'Arial', sans-serif;
       color: #fff;
+      text-align: center;
     }
 
     .header {
-      text-align: center;
       padding: 50px;
     }
 
@@ -27,6 +27,16 @@
     h2 {
       font-size: 24px;
       font-weight: bold;
+      margin-bottom: 50px;
+    }
+
+    .emoji {
+      font-size: 100px;
+      margin: 20px;
+    }
+
+    .weather-description {
+      font-size: 20px;
     }
   </style>
 </head>
@@ -35,6 +45,14 @@
 <div class="header">
   <h1>Gorilla Tag Weather Forecast</h1>
   <h2>Welcome to Gorilla Tag's (UNOFFICIAL) Weather Forecast.</h2>
+
+  <!-- Weather Emojis and Descriptions -->
+  <div class="emoji">&#9728;<div class="weather-description">Sunny</div></div>
+  <div class="emoji">&#127783;<div class="weather-description">Cloudy</div></div>
+  <div class="emoji">&#127783;&#9728;<div class="weather-description">Partly Cloudy</div></div>
+  <div class="emoji">&#127780;<div class="weather-description">Rainy</div></div>
+  <!-- Add more emojis and descriptions as needed -->
+
 </div>
 
 </body>
