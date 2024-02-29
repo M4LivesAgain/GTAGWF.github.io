@@ -8,14 +8,19 @@
     body {
       margin: 0;
       padding: 0;
-      background: url('https://preview.redd.it/rnhbhegj2jhb1.png?width=1920&format=png&auto=webp&s=22f24209e95b9fed135c5335abb3f7d4a035342f') center/cover no-repeat;
       font-family: 'Arial', sans-serif;
       color: #fff;
       text-align: center;
-      position: relative;
     }
 
-    body::before {
+    .background-container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background: url('https://preview.redd.it/rnhbhegj2jhb1.png?width=1920&format=png&auto=webp&s=22f24209e95b9fed135c5335abb3f7d4a035342f') center/cover no-repeat;
+    }
+
+    .background-container::before {
       content: '';
       position: absolute;
       top: 0;
@@ -26,6 +31,10 @@
     }
 
     .header {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       padding: 50px;
     }
 
@@ -53,17 +62,19 @@
 </head>
 <body>
 
-<div class="header">
-  <h1>Gorilla Tag Weather Forecast</h1>
-  <h2>Welcome to Gorilla Tag's (UNOFFICIAL) Weather Forecast.</h2>
+<div class="background-container">
+  <div class="header">
+    <h1>Gorilla Tag Weather Forecast</h1>
+    <h2>Welcome to Gorilla Tag's (UNOFFICIAL) Weather Forecast.</h2>
 
-  <!-- Weather Emojis and Descriptions -->
-  <div class="emoji">&#9728;<div class="weather-description">Sunny</div></div>
-  <div class="emoji">&#127783;<div class="weather-description">Cloudy</div></div>
-  <div class="emoji">&#127783;&#9728;<div class="weather-description">Partly Cloudy</div></div>
-  <div class="emoji">&#127780;<div class="weather-description">Rainy</div></div>
-  <!-- Add more emojis and descriptions as needed -->
+    <!-- Weather Emojis and Descriptions -->
+    <div class="emoji">&#9728;<div class="weather-description">Sunny</div></div>
+    <div class="emoji">&#127783;<div class="weather-description">Cloudy</div></div>
+    <div class="emoji">&#127783;&#9728;<div class="weather-description">Partly Cloudy</div></div>
+    <div class="emoji">&#127780;<div class="weather-description">Rainy</div></div>
+    <!-- Add more emojis and descriptions as needed -->
 
+  </div>
 </div>
 
 </body>
